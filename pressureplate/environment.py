@@ -290,7 +290,7 @@ class PressurePlate(gym.Env):
             _goal = _goal.reshape(-1)
 
             # Concat
-            obs.append(np.concatenate((_agents, _plates, _doors, _goal, np.array([x, y])), axis=0, dtype=np.float32))
+            obs.append(np.concatenate((_agents, _plates, _doors, _goal, np.array([x, y])), axis=0))
 
         return tuple(obs)
 
