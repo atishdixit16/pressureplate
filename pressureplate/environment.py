@@ -57,7 +57,7 @@ class Goal(Entity):
 
 class PressurePlate(gym.Env):
     """"""
-    metadata = {"render.modes": ["human"]}
+    metadata = {"render.modes": ["human", "rgb_array"]}
 
     def __init__(self, height, width, n_agents, sensor_range, layout):
         self.grid_size = (height, width)
